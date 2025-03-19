@@ -3,7 +3,7 @@
 with source_data as (
 
     select 
-          date
+          date,
           customer_id,
            c.city,
            category,
