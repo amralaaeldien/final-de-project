@@ -1,0 +1,36 @@
+
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_DATABASE', 'lofty-hybrid-448518-c8') }}"
+    schema: "{{ env_var('DBT_SCHEMA', 'final_project_dataset') }}"
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: coffee
+      - name: saudi
+         # freshness:
+           # error_after: {count: 6, period: hour}
+
+models:
+    - name: coffee_model
+      description: "A starter dbt model"
+      columns:
+          - name: date
+          - name: customer_id
+          - name: city
+          - name: category
+          - name: product
+          - name: unit_price
+          - name: quantity
+          - name: sales_amount
+          - name: used_discount
+          - name: discount_amount
+          - name: final_sales
+
+    - name: saudi_model
+      description: "A starter dbt model"
+      columns:
+          - name: city
+          - name: latitude
+          - name: longitude
