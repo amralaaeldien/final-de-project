@@ -1,15 +1,16 @@
-Welcome to your new dbt project!
+##Describtion of the project
 
-### Using the starter project
+https://www.kaggle.com/datasets/halaturkialotaibi/coffee-bean-sales-dataset/data
 
-Try running the following commands:
-- dbt run
-- dbt test
+This is a dataset about coffee bean sales in saudia arabia.
+I have created a pipeline to download the data files, load it to GCS, and then loading the data to BigQuery using dlt, then manipulating the data to have an approperiate schema using dbt.
+
+To start using and applying the project then run the Untitled.ipynb file in this directory using Jupyter.
+
+a link to the required dashboard:
+
+https://lookerstudio.google.com/reporting/0726d0fe-507d-4930-9b14-ee50ccdbe925
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+
